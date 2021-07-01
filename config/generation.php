@@ -2,22 +2,13 @@
 
 use Codeat3\BladeIconGeneration\IconProcessor;
 
-class BladeByteSizeIcons extends IconProcessor
-{
-    public function postOptimization()
-    {
-        $this->svgLine = preg_replace('/\<\?xml.*\?\>/', '', $this->svgLine);
-        return $this;
-    }
-}
 
 $svgNormalization = static function (string $tempFilepath, array $iconSet) {
 
     // perform generic optimizations
-    $iconProcessor = new BladeByteSizeIcons($tempFilepath, $iconSet);
+    $iconProcessor = new IconProcessor($tempFilepath, $iconSet);
     $iconProcessor
         ->optimize()
-        ->postOptimization()
         ->save();
 };
 
