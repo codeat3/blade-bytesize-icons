@@ -2,6 +2,8 @@
 
 This changelog follows [the Keep a Changelog standard](https://keepachangelog.com).
 
+## [Unreleased](https://github.com/codeat3/blade-bytesize-icons/compare/1.1.0...main)
+
 ## 1.1.0 (2021-07-19)
 - added icon generation & auto update action
 - icon updates due to generic icon generation scripts
