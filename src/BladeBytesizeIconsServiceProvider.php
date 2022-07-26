@@ -17,24 +17,24 @@ final class BladeBytesizeIconsServiceProvider extends ServiceProvider
         $this->callAfterResolving(Factory::class, function (Factory $factory, Container $container) {
             $config = $container->make('config')->get('blade-bytesize-icons', []);
 
-            $factory->add('bytesize-icons', array_merge(['path' => __DIR__.'/../resources/svg'], $config));
+            $factory->add('bytesize-icons', array_merge(['path' => __DIR__ . '/../resources/svg'], $config));
         });
     }
 
     private function registerConfig(): void
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/blade-bytesize-icons.php', 'blade-bytesize-icons');
+        $this->mergeConfigFrom(__DIR__ . '/../config/blade-bytesize-icons.php', 'blade-bytesize-icons');
     }
 
     public function boot(): void
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../resources/svg' => public_path('vendor/blade-bytesize-icons'),
+                __DIR__ . '/../resources/svg' => public_path('vendor/blade-bytesize-icons'),
             ], 'blade-bytesize-icons');
 
             $this->publishes([
-                __DIR__.'/../config/blade-bytesize-icons.php' => $this->app->configPath('blade-bytesize-icons.php'),
+                __DIR__ . '/../config/blade-bytesize-icons.php' => $this->app->configPath('blade-bytesize-icons.php'),
             ], 'blade-bytesize-icons-config');
         }
     }
