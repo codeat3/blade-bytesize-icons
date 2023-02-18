@@ -2,7 +2,19 @@
 
 This changelog follows [the Keep a Changelog standard](https://keepachangelog.com).
 
-## [Unreleased](https://github.com/codeat3/blade-bytesize-icons/compare/1.3.0...HEAD)
+## [Unreleased](https://github.com/codeat3/blade-bytesize-icons/compare/1.4.0...HEAD)
+
+## [1.4.0](https://github.com/codeat3/blade-bytesize-icons/compare/1.3.0...1.4.0) - 2023-02-18
+
+### What's Changed
+
+- Laravel 10 by @inmanturbo in https://github.com/codeat3/blade-bytesize-icons/pull/5
+
+### New Contributors
+
+- @inmanturbo made their first contribution in https://github.com/codeat3/blade-bytesize-icons/pull/5
+
+**Full Changelog**: https://github.com/codeat3/blade-bytesize-icons/compare/1.3.0...1.4.0
 
 ## [1.3.0](https://github.com/codeat3/blade-bytesize-icons/compare/1.2.0...1.3.0) - 2022-02-03
 
